@@ -1,0 +1,181 @@
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #111d4a;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+img {
+    object-fit: cover;
+    flex-basis: 320px;
+    min-height: 0;
+    min-width: 0;
+}
+
+.title,
+.read-time,
+.read-more {
+    font-family: 'Blinker', sans-serif;
+}
+
+.title {
+    color: #05cbe9;
+    font-size: 1.75rem;
+}
+
+.card-body {
+    color: #FFFFFF;
+    opacity: 80%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-content {
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #111D4A;
+    padding: 0 36px;
+}
+
+.read-more {
+    display: flex;
+    font-size: 1.25rem;
+    background-color: #05CBE9;
+    width: 159px;
+    height: 44px;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #111D4A;
+    margin-bottom: 2;
+}
+
+.read-time {
+    color: #FFFFFF;
+    opacity: 51%;
+    font-size: 20px;
+    margin-bottom: 2;
+}
+
+.read-time span {
+    font-weight: 700;
+    display: block;
+    font-size: 2.5rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.get-colors {
+    display: flex;
+    margin: 0 auto;
+}
+
+.color-container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #111d4a;
+}
+
+.colors {
+    margin: 1em;
+    padding: 1em 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* GET PHOTOS */
+
+.photo-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #111d4a;
+    padding: 0;
+}
+
+.photos {
+    max-width: 800px;
+    margin: 2em 1em;
+    border: 0.7rem #05cbe9 solid;
+    border-radius: 0.7rem;
+    
+}
+
+.controls {
+    padding: 1em;
+}
+
+.get-photos {
+    margin: 0 auto;
+    display: flex;
+}
+
+.photo-info {
+    width: 100%;
+    height: auto;
+}
+
+.author-info {
+    text-align: center;
+    padding-bottom: 1em;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Blinker';
+}
+
+/* Media */
+
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+
+    img {
+        height: 320px;
+    }
+
+    .photo-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 500px;
+    }
+
+    .get-photos {
+        display: flex;
+    }
+
+
+}
+
+
+/* GET COLORS */
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-grid {
+    width: 20px;
+    height: 20px;
+}

@@ -77,7 +77,10 @@ img {
     margin: 0;
 }
 
-.get-colors {
+.get-photos,
+.get-users,
+.get-details
+ {
     display: flex;
     margin: 0 auto;
 }
@@ -105,6 +108,11 @@ img {
     padding: 0;
 }
 
+
+.users-control {
+    padding: 2em;
+}
+
 .photos {
     max-width: 800px;
     margin: 2em 1em;
@@ -113,13 +121,8 @@ img {
     
 }
 
-.controls {
+.controls{
     padding: 1em;
-}
-
-.get-photos {
-    margin: 0 auto;
-    display: flex;
 }
 
 .photo-info {
@@ -135,6 +138,14 @@ img {
     font-family: 'Blinker';
 }
 
+.users-container,
+.user-details {
+    display: flex;
+    margin: 10px auto;
+    background-color: red;
+    width: 90%;
+}
+
 /* Media */
 
 @media (min-width: 600px) {
@@ -146,11 +157,13 @@ img {
         height: 320px;
     }
 
-    .photo-container {
+    .photo-container,
+    .users-container,
+    .user-details {
         display: flex;
         flex-direction: column;
         max-width: 800px;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     .card-content {
@@ -160,9 +173,6 @@ img {
         max-width: 500px;
     }
 
-    .get-photos {
-        display: flex;
-    }
 
 
 }

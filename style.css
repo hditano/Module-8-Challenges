@@ -139,11 +139,34 @@ img {
 }
 
 .users-container,
-.user-details {
+.user-details,
+.grid-details {
     display: flex;
     margin: 10px auto;
     background-color: red;
     width: 90%;
+}
+
+.grid-details {
+    width: 90%;
+}
+
+.my-grid {
+    width: 90%;
+    display: grid;
+    grid-template: 50px 50px 50px / 100px 100px;
+}
+
+.grid-1 {
+    background-color: yellow;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.grid-2 {
+    background-color: cyan;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
 }
 
 /* Media */
